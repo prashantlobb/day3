@@ -56,7 +56,9 @@ exports.config = {
         browserName: 'Chrome',
         'appium:deviceName': 'Android GoogleAPI Emulator',
         'appium:platformVersion': '12.0',
-        'appium:automationName': 'UiAutomator2'
+        'appium:automationName': 'UiAutomator2',
+          deviceName: 'Pixel_6a',
+          app: "/home/prashantsingh/Desktop/lobbProject/mobxProj/android/app/build/outputs/apk/debug/app-debug.apk",
     }],
 
     //
@@ -106,7 +108,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['appium', 'visual'],
+    services: ['appium'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
